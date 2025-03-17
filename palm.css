@@ -1,0 +1,47 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-buttons, .auth-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.nav-btn, .auth-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.nav-btn:hover, .auth-btn:hover {
+    text-decoration: underline;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-buttons, .auth-buttons {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+    }
+}
